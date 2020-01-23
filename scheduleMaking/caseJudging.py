@@ -15,7 +15,7 @@ def case1Match(schemes, ruleDic):
     flowIds = [veh.split('.')[0] for veh in schemes[0].split('-') if veh != '']
     for flow1 in flowIds:
         for flow2 in flowIds:
-            if flow2 != flow1 and flow2 not in ruleDic[flow1]:
+            if flow2 != flow1 and flow2 in ruleDic[flow1]:
                 flag = False
     return flag
 
@@ -25,7 +25,7 @@ def case2Match(schemes, ruleDic):
     flow_set = list(set(flow_list))
     for flow1 in flow_set:
         for flow2 in flow_list:
-            if flow2 != flow1 and flow2 not in ruleDic[flow1]:
+            if flow2 != flow1 and flow2 in ruleDic[flow1]:
                 flag = False
     return flag
 

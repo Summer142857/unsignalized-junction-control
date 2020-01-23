@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 01/23/20 11:37:18 by Eclipse SUMO GUI Version 1.3.1
+<!-- generated on 01/23/20 18:13:40 by Eclipse SUMO GUI Version 1.3.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -29,5 +29,5 @@
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
-    <interval begin="0.00" end="84.00" id="bo_1" nVehContrib="7" flow="300.00" occupancy="6.24" speed="7.23" harmonicMeanSpeed="7.20" length="5.00" nVehEntered="8"/>
+    <interval begin="0.00" end="55.60" id="bo_1" nVehContrib="5" flow="323.74" occupancy="7.12" speed="6.35" harmonicMeanSpeed="6.31" length="5.00" nVehEntered="5"/>
 </detector>

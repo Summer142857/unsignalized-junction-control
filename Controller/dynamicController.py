@@ -30,15 +30,15 @@ def slowDown(vid, turnVelocity):
     '''
     nowSpeed = traci.vehicle.getSpeed(vid)
     lanePostion = traci.vehicle.getLanePosition(vid)
-    remainder_min = (nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * traci.vehicle.getDecel(vid))
+    remainder_min = np.abs((nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * traci.vehicle.getDecel(vid)))
     remainder = LANE_LENGTH - lanePostion   # the leftover distance between now position and the intersection
     if remainder_min < remainder:
-        expectedA = (nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * remainder)
-        time_interval = (nowSpeed - turnVelocity) / expectedA
+        expectedA = np.abs((nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * remainder))
+        time_interval = np.abs(nowSpeed - turnVelocity) / expectedA
         traci.vehicle.slowDown(vid, turnVelocity, time_interval)
     else:
         maxA = traci.vehicle.getDecel(vid)
-        time_interval = (nowSpeed - turnVelocity) / maxA
+        time_interval = np.abs(nowSpeed - turnVelocity) / maxA
         traci.vehicle.slowDown(vid, turnVelocity, time_interval)
         vExpected = np.sqrt(nowSpeed * nowSpeed - 2 * maxA * remainder)
         time_interval = (nowSpeed - vExpected) / maxA
@@ -56,9 +56,6 @@ def slow4conflict(vid):
         expectedDecel = (nowSpeed * nowSpeed) / (2 * x)
     else:
         expectedDecel = 0
-    print("=========")
-    print(vid)
-    print(expectedDecel)
-    print(traci.vehicle.getAcceleration(vid))
-    print("=========")
-    traci.vehicle.setApparentDecel(vid, expectedDecel)
+    eSpeed = nowSpeed - traci.simulation.getDeltaT() * expectedDecel
+    traci.vehicle.setSpeed(vid, eSpeed)
+    return traci.simulation.getTime() + nowSpeed / expectedDecel

@@ -1,5 +1,5 @@
 <routes>
-	<vType id="car1" vClass="passenger" carFollowModel="IDM" departSpeedd="max" maxSpeed="10.0"/>
+	<vType id="car1" vClass="passenger" carFollowModel="CACC" departSpeedd="max" maxSpeed="10.0"/>
 	
 	<!-- 西进口车流 -->
 	<flow id="leftToRight" color="220,20,60" begin="0" end="7200" probability="0.026" type="car1">

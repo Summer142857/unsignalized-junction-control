@@ -1,11 +1,11 @@
 import traci
 
-def laneChangeBan(vehsInfo):
+def laneChangeBan():
     '''
     Forbidden lane change in Buffered Area
     :param vehsInfo: The vehicles' information dict generate by strategy
     '''
-    vids = list(vehsInfo.keys())
+    vids = traci.vehicle.getIDList()
     for vid in vids:
         traci.vehicle.couldChangeLane(vid, 0)
     return None

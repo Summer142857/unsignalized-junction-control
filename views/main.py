@@ -1,12 +1,11 @@
 import traci
 from traci import constants as tc
-import numpy as np
 import subprocess
 import sys
 from scheduleMaking.BasicTreeSearch import BasicTree
 from scheduleMaking.caseJudging import caseClassify, read_config
 
-LANE_ID = ["l_0", "b_0", "r_0", "u_0"]   # left, below, right, up
+LANE_ID = ["l_0", "b_0", "r_0", "u_0", "l_1", "b_1", "r_1", "u_1", "l_2", "b_2", "r_2", "u_2"]   # left, below, right, up
 LANE_LENGTH = 200
 
 def get_vehicles(dist = 50.0):

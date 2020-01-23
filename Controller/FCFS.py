@@ -23,6 +23,7 @@ class FcfsController:
         self.exit_loop = ['uo_1', 'bo_1', 'ro_1', 'lo_1', 'uo_2', 'bo_2', 'ro_2', 'lo_2', 'uo_3', 'bo_3', 'ro_3', 'lo_3']
         self.entryTime = dict()  # record vehicles' id and corresponding entry time
         self.occupancy = dict()
+        self.illegal = dict()
         self.conflictDict = read_config()
         # for calculating travel time
         self.travelDict = defaultdict(list)
@@ -109,28 +110,37 @@ class FcfsController:
                     if not self.occupancy:
                         # if occupancy information is empty, then a car can run in max allowed speed
                         self.occupancy[vid] = self.desiredArrTime(vid)
+                        if vid in self.illegal.keys():
+                            del self.illegal[vid]
                     else:
                         # the vehicle's route has no conflict with those in occupancy dict, allow its request
                         flag = 0
                         for existsVeh in list(self.occupancy.keys()):
-                            if vid.split('.')[0] not in self.conflictDict[existsVeh.split('.')[0]]:
+                            if vid.split('.')[0] in self.conflictDict[existsVeh.split('.')[0]]:
                                 flag = 1
                         if flag == 0:
                             self.occupancy[vid] = self.desiredArrTime(vid)
+                            if vid in self.illegal.keys():
+                                del self.illegal[vid]
+        # obtain conflict or follower vehicles' information
+        for vid in list(self.vehsInfo.keys()):
+            if vid not in list(self.occupancy.keys()):
+                # in every simulation step, if a vehicle have no permission to entry the intersection,
+                # and at the same time, the vehicle is in front of the junction, it will stop and wait
+                self.illegal[vid] =slow4conflict(vid)
         return None
 
     def handleReservation(self):
-        # in every simulation step, if a vehicle have no permission to entry the intersection,
-        # and at the same time, the vehicle is in front of the junction, it will stop and wait
-        for vid in list(self.vehsInfo.keys()):
-            if vid not in list(self.occupancy.keys()):
-                slow4conflict(vid)
         self._applyReservation()
         for vid in list(self.occupancy.keys()):
             if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
                 # neither in the control area nor at the intersection
                 del self.occupancy[vid]
+        for vid in list(self.illegal.keys()):
+            if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
+                del self.illegal[vid]
         print(self.occupancy)
+        print(self.illegal)
         return None
 
     def _collectTravelTime(self):
@@ -154,9 +164,8 @@ class FcfsController:
                         self.travelDict[veh_id].append(entry_time)
 
     def simOneStep(self):
-        self.getVehsInfo()
-        laneChangeBan(self.vehsInfo)
         self.handleReservation()
+        laneChangeBan()
         self._collectTravelTime()
 
     def _statistic(self, all_direction = True):
