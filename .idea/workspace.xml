@@ -3,8 +3,32 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf6edeb-c942-4e7a-9962-08998cd85512" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Controller/dynamicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/dynamicController.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduleMaking/caseJudging.py" beforeDir="false" afterPath="$PROJECT_DIR$/scheduleMaking/caseJudging.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/FCFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FCFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_2_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_2_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_1_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_1_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_2_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_2_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_b_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_b_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_2_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_b_2_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_l_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_1_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_l_1_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_2_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_l_2_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_r_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_1_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_r_1_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_2_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_r_2_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_u_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_1_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_u_1_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_2_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/e1Detector_u_2_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/visualize.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,13 +39,27 @@
   <component name="CoverageDataManager">
     <SUITE FILE_PATH="coverage/intersectionOpt$BasicTreeSearch.coverage" NAME="BasicTreeSearch Coverage Results" MODIFIED="1579321097858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scheduleMaking" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="9" selection-start-line="9" selection-end-line="9" />
+            <state relative-caret-position="341">
+              <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -30,34 +68,13 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/views/main.py">
+        <entry file="file://$PROJECT_DIR$/utils/visualize.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+            <state relative-caret-position="233">
+              <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
               <folding>
-                <element signature="e#0#12#0" expanded="true" />
+                <element signature="e#0#31#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controller/dynamicController.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Controller/areaController.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="154">
-              <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
             </state>
           </provider>
         </entry>
@@ -82,7 +99,6 @@
       <list>
         <option value="$PROJECT_DIR$/Controller/areaBasicControll.py" />
         <option value="$PROJECT_DIR$/utils/statistic.py" />
-        <option value="$PROJECT_DIR$/utils/visualize.py" />
         <option value="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" />
         <option value="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" />
         <option value="$PROJECT_DIR$/tmp.py" />
@@ -90,14 +106,15 @@
         <option value="$PROJECT_DIR$/Controller/areaController.py" />
         <option value="$PROJECT_DIR$/noConflictConfig.txt" />
         <option value="$PROJECT_DIR$/ConflictConfig.txt" />
-        <option value="$PROJECT_DIR$/Controller/FCFS.py" />
         <option value="$PROJECT_DIR$/views/main.py" />
         <option value="$PROJECT_DIR$/scheduleMaking/caseJudging.py" />
         <option value="$PROJECT_DIR$/Controller/dynamicController.py" />
+        <option value="$PROJECT_DIR$/utils/visualize.py" />
+        <option value="$PROJECT_DIR$/Controller/FCFS.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-624" />
     <option name="y" value="261" />
     <option name="width" value="1260" />
@@ -121,6 +138,11 @@
               <item name="intersectionOpt" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersectionOpt" type="462c0819:PsiDirectoryNode" />
               <item name="scheduleMaking" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="intersectionOpt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="intersectionOpt" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intersectionOpt" type="b2602c69:ProjectViewProjectNode" />
@@ -325,13 +347,12 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115510000" />
+    <option name="totallyTimeSpent" value="120122000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25222313" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25222313" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -346,13 +367,13 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.3587922" />
+      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.27531084" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.530303" visible="true" weight="0.033144705" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.530303" weight="0.32983023" />
       <window_info anchor="right" x="0" y="0" width="273" height="495" id="Documentation" order="4" sideWeight="0.46969697" side_tool="true" weight="0.41713825" />
-      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32983023" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -392,16 +413,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/areaBasicControll.py" />
     <entry file="file://$PROJECT_DIR$/utils/statistic.py" />
-    <entry file="file://$PROJECT_DIR$/utils/visualize.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="26" lean-forward="true" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scheduleMaking/PrePruneTree.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -417,13 +428,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
           <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/areaController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
         </state>
       </provider>
     </entry>
@@ -444,26 +448,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/views/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scheduleMaking/caseJudging.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -474,10 +458,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/areaController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/dynamicController.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="63" column="41" selection-start-line="63" selection-start-column="41" selection-end-line="63" selection-end-column="41" />
+        <state relative-caret-position="1078">
+          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="9">
+          <caret line="35" column="55" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/visualize.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="25" column="20" selection-start-line="25" selection-start-column="20" selection-end-line="25" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="341">
+          <caret line="208" lean-forward="true" selection-start-line="208" selection-end-line="208" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

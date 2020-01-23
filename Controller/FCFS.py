@@ -201,7 +201,7 @@ if __name__ == "__main__":
         stdout=sys.stdout, stderr=sys.stderr)
     traci.init(PORT)
     t = FcfsController()
-    for sim_step in range(3000):
+    for sim_step in range(36000):
         traci.simulationStep()
         t.simOneStep()
     traci.close()

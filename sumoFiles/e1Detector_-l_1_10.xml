@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<!-- generated on 01/23/20 18:49:20 by Eclipse SUMO GUI Version 1.3.1
+<!-- generated on 01/23/20 20:02:53 by Eclipse SUMO GUI Version 1.3.1
 <configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
 
     <input>
@@ -29,5 +29,12 @@
 -->
 
 <detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
-    <interval begin="0.00" end="600.00" id="lo_2" nVehContrib="16" flow="96.00" occupancy="1.36" speed="9.82" harmonicMeanSpeed="9.81" length="5.00" nVehEntered="16"/>
+    <interval begin="0.00" end="900.00" id="lo_2" nVehContrib="25" flow="100.00" occupancy="1.42" speed="9.82" harmonicMeanSpeed="9.81" length="5.00" nVehEntered="25"/>
+    <interval begin="900.00" end="1800.00" id="lo_2" nVehContrib="37" flow="148.00" occupancy="2.09" speed="9.83" harmonicMeanSpeed="9.82" length="5.00" nVehEntered="37"/>
+    <interval begin="1800.00" end="2700.00" id="lo_2" nVehContrib="22" flow="88.00" occupancy="1.23" speed="9.96" harmonicMeanSpeed="9.96" length="5.00" nVehEntered="22"/>
+    <interval begin="2700.00" end="3600.00" id="lo_2" nVehContrib="28" flow="112.00" occupancy="1.59" speed="9.80" harmonicMeanSpeed="9.78" length="5.00" nVehEntered="28"/>
+    <interval begin="3600.00" end="4500.00" id="lo_2" nVehContrib="33" flow="132.00" occupancy="1.87" speed="9.81" harmonicMeanSpeed="9.80" length="5.00" nVehEntered="33"/>
+    <interval begin="4500.00" end="5400.00" id="lo_2" nVehContrib="30" flow="120.00" occupancy="1.69" speed="9.89" harmonicMeanSpeed="9.89" length="5.00" nVehEntered="30"/>
+    <interval begin="5400.00" end="6300.00" id="lo_2" nVehContrib="29" flow="116.00" occupancy="1.64" speed="9.81" harmonicMeanSpeed="9.80" length="5.00" nVehEntered="29"/>
+    <interval begin="6300.00" end="7200.00" id="lo_2" nVehContrib="22" flow="88.00" occupancy="1.22" speed="9.99" harmonicMeanSpeed="9.99" length="5.00" nVehEntered="22"/>
 </detector>
