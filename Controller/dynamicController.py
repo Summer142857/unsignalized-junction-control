@@ -58,4 +58,7 @@ def slow4conflict(vid):
         expectedDecel = 0
     eSpeed = nowSpeed - traci.simulation.getDeltaT() * expectedDecel
     traci.vehicle.setSpeed(vid, eSpeed)
-    return traci.simulation.getTime() + nowSpeed / expectedDecel
+    if expectedDecel != 0:
+        return traci.simulation.getTime() + nowSpeed / expectedDecel
+    else:
+        return traci.simulation.getTime()

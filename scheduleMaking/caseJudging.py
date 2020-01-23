@@ -3,7 +3,7 @@ from scheduleMaking.BasicTreeSearch import BasicTree
 import json
 
 def read_config():
-    filename = "../noConflictConfig.txt"
+    filename = "../ConflictConfig.txt"
     file = open(filename, 'r')
     js = file.read()
     dic = json.loads(js)
