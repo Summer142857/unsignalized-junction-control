@@ -2,13 +2,15 @@ import traci
 import subprocess
 import sys
 import numpy as np
-from Controller.dynamicController import speedUp, slowDown
+from Controller.dynamicController import speedUp, slowDown, slow4conflict
 from scheduleMaking.caseJudging import read_config
 from collections import defaultdict
 from utils.visualize import travelTimeVis
+from Controller.areaController import laneChangeBan
 
-LANE_ID = ["l_0", "b_0", "r_0", "u_0", "l_01", "b_1", "r_1", "u_1", "l_2", "b_2", "r_2", "u_2"]   # left, below, right, up
+LANE_ID = ["l_0", "b_0", "r_0", "u_0", "l_1", "b_1", "r_1", "u_1", "l_2", "b_2", "r_2", "u_2"]   # left, below, right, up
 LANE_LENGTH = 200
+JUNCTION_ID = [":gneJ11_0_0", ":gneJ11_1_0", ":gneJ11_2_0", ":gneJ11_3_0",":gneJ11_4_0", ":gneJ11_5_0",":gneJ11_6_0", ":gneJ11_7_0", ":gneJ11_8_0",":gneJ11_9_0", ":gneJ11_10_0",":gneJ11_11_0"]
 
 class FcfsController:
     '''
@@ -121,12 +123,12 @@ class FcfsController:
         # in every simulation step, if a vehicle have no permission to entry the intersection,
         # and at the same time, the vehicle is in front of the junction, it will stop and wait
         for vid in list(self.vehsInfo.keys()):
-            if traci.vehicle.getLanePosition(vid) > LANE_LENGTH - 10 and vid not in list(self.occupancy.keys()):
-                stopDuration = traci.vehicle.getSpeed(vid) / traci.vehicle.getDecel(vid)
-                traci.vehicle.slowDown(vid, 0, stopDuration)
+            if vid not in list(self.occupancy.keys()):
+                slow4conflict(vid)
         self._applyReservation()
         for vid in list(self.occupancy.keys()):
-            if vid not in list(self.vehsInfo.keys()):
+            if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
+                # neither in the control area nor at the intersection
                 del self.occupancy[vid]
         print(self.occupancy)
         return None
@@ -153,6 +155,7 @@ class FcfsController:
 
     def simOneStep(self):
         self.getVehsInfo()
+        laneChangeBan(self.vehsInfo)
         self.handleReservation()
         self._collectTravelTime()
 
@@ -189,7 +192,7 @@ if __name__ == "__main__":
         stdout=sys.stdout, stderr=sys.stderr)
     traci.init(PORT)
     t = FcfsController()
-    for sim_step in range(10000):
+    for sim_step in range(3000):
         traci.simulationStep()
         t.simOneStep()
     traci.close()

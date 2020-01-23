@@ -16,7 +16,7 @@
 	
 	<!-- 南进口车流 -->
 	<flow id="belowToRight" color="0,0,255" begin="0" end="7200" probability="0.027" type="car1">
-		<route edges="b -u" />
+		<route edges="b -r" />
 	</flow>
 	
 	<flow id="belowToLeft" color="25,25,112" begin="0" end="7200" probability="0.01" type="car1">

@@ -34,7 +34,7 @@ def treeGenerate():
 if __name__ == "__main__":
     PORT = 8813
     sumoBinary = "D:\\sumo\\bin\\sumo-gui"
-    cfg_filepath = "D:\\sumo_projects\\intersection\\intersection.sumocfg"
+    cfg_filepath = "../sumoFiles\\intersection.sumocfg"
     sumoProcess = subprocess.Popen([sumoBinary, "-c", cfg_filepath, "--remote-port", str(PORT)],
         stdout=sys.stdout, stderr=sys.stderr)
     traci.init(PORT)

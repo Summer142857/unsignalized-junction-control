@@ -1,6 +1,8 @@
 import traci
 import numpy as np
 
+LANE_LENGTH = 200
+
 def speedUp(vid):
     '''
     let vehicle speed up to its max allowed speed
@@ -29,7 +31,7 @@ def slowDown(vid, turnVelocity):
     nowSpeed = traci.vehicle.getSpeed(vid)
     lanePostion = traci.vehicle.getLanePosition(vid)
     remainder_min = (nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * traci.vehicle.getDecel(vid))
-    remainder = 200 - lanePostion   # the leftover distance between now position and the intersection
+    remainder = LANE_LENGTH - lanePostion   # the leftover distance between now position and the intersection
     if remainder_min < remainder:
         expectedA = (nowSpeed * nowSpeed - turnVelocity * turnVelocity) / (2 * remainder)
         time_interval = (nowSpeed - turnVelocity) / expectedA
@@ -42,3 +44,21 @@ def slowDown(vid, turnVelocity):
         time_interval = (nowSpeed - vExpected) / maxA
     arrTime = traci.simulation.getTime() + time_interval
     return arrTime
+
+def slow4conflict(vid):
+    '''
+    if a vehicle can't apply a permission, it would slow down slowly, expect to stop at the intersection
+    :param vid: vehicle id in simulation
+    '''
+    nowSpeed = traci.vehicle.getSpeed(vid)
+    x = LANE_LENGTH - traci.vehicle.getLanePosition(vid)
+    if x != 0:
+        expectedDecel = (nowSpeed * nowSpeed) / (2 * x)
+    else:
+        expectedDecel = 0
+    print("=========")
+    print(vid)
+    print(expectedDecel)
+    print(traci.vehicle.getAcceleration(vid))
+    print("=========")
+    traci.vehicle.setApparentDecel(vid, expectedDecel)
