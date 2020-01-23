@@ -1,0 +1,14 @@
+<configuration>
+   <input>
+       <net-file value="intersection.net.xml" />
+       <route-files value="intersection.rou.xml" />
+       <additional-files value="add.xml" />
+   </input>
+   <time>
+       <step-length value="0.2" />
+   </time>
+   <processing>
+       <lateral-resolution value="1." />
+       <!--<fcd-output value="simulationResult.xml" />-->
+   </processing>
+</configuration>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 01/22/20 17:23:03 by Eclipse SUMO netedit Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/netconvertConfiguration.xsd">
+
+    <input>
+        <sumo-net-file value="D:\sumo_projects\signal_intersection\junction.net.xml"/>
+    </input>
+
+    <output>
+        <output-file value="D:\sumo_projects\signal_intersection\junction.net.xml"/>
+    </output>
+
+    <processing>
+        <geometry.max-grade.fix value="false"/>
+        <offset.disable-normalization value="true"/>
+        <opposites.guess.fix-lengths value="true"/>
+        <lefthand value="false"/>
+    </processing>
+
+    <junctions>
+        <no-turnarounds value="true"/>
+        <junctions.corner-detail value="5"/>
+        <junctions.limit-turn-speed value="5.5"/>
+        <rectangular-lane-cut value="false"/>
+    </junctions>
+
+    <pedestrian>
+        <walkingareas value="false"/>
+    </pedestrian>
+
+    <netedit>
+        <additional-files value="D:\sumo_projects\signal_intersection\add.xml"/>
+    </netedit>
+
+</configuration>
+-->
+
+<additional xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/additional_file.xsd">
+    <e1Detector id="b_1" lane="b_0" pos="150.00" freq="900.00" file="e1Detector_b_0_1.xml"/>
+    <e1Detector id="b_2" lane="b_1" pos="150.00" freq="900.00" file="e1Detector_b_1_23.xml"/>
+    <e1Detector id="b_3" lane="b_2" pos="150.00" freq="900.00" file="e1Detector_b_2_22.xml"/>
+    <e1Detector id="bo_1" lane="-b_0" pos="0.00" freq="900.00" file="e1Detector_-b_0_7.xml"/>
+    <e1Detector id="bo_2" lane="-b_1" pos="0.00" freq="900.00" file="e1Detector_-b_1_14.xml"/>
+    <e1Detector id="bo_3" lane="-b_2" pos="0.00" freq="900.00" file="e1Detector_-b_2_15.xml"/>
+    <e1Detector id="l_1" lane="l_0" pos="150.00" freq="900.00" file="e1Detector_l_0_0.xml"/>
+    <e1Detector id="l_2" lane="l_1" pos="150.00" freq="900.00" file="e1Detector_l_1_12.xml"/>
+    <e1Detector id="l_3" lane="l_2" pos="150.00" freq="900.00" file="e1Detector_l_2_13.xml"/>
+    <e1Detector id="lo_1" lane="-l_0" pos="0.00" freq="900.00" file="e1Detector_-l_0_7.xml"/>
+    <e1Detector id="lo_2" lane="-l_1" pos="0.00" freq="900.00" file="e1Detector_-l_1_10.xml"/>
+    <e1Detector id="lo_3" lane="-l_2" pos="0.00" freq="900.00" file="e1Detector_-l_2_11.xml"/>
+    <e1Detector id="r_1" lane="r_0" pos="150.00" freq="900.00" file="e1Detector_r_0_3.xml"/>
+    <e1Detector id="r_2" lane="r_1" pos="150.00" freq="900.00" file="e1Detector_r_1_18.xml"/>
+    <e1Detector id="r_3" lane="r_2" pos="150.00" freq="900.00" file="e1Detector_r_2_19.xml"/>
+    <e1Detector id="ro_1" lane="-r_0" pos="0.00" freq="900.00" file="e1Detector_-r_0_6.xml"/>
+    <e1Detector id="ro_2" lane="-r_1" pos="0.00" freq="900.00" file="e1Detector_-r_1_16.xml"/>
+    <e1Detector id="ro_3" lane="-r_2" pos="0.00" freq="900.00" file="e1Detector_-r_2_17.xml"/>
+    <e1Detector id="u_1" lane="u_0" pos="150.00" freq="900.00" file="e1Detector_u_0_2.xml"/>
+    <e1Detector id="u_2" lane="u_1" pos="150.00" freq="900.00" file="e1Detector_u_1_20.xml"/>
+    <e1Detector id="u_3" lane="u_2" pos="150.00" freq="900.00" file="e1Detector_u_2_21.xml"/>
+    <e1Detector id="uo_1" lane="-u_0" pos="0.00" freq="900.00" file="e1Detector_-u_0_4.xml"/>
+    <e1Detector id="uo_2" lane="-u_1" pos="0.00" freq="900.00" file="e1Detector_-u_1_8.xml"/>
+    <e1Detector id="uo_3" lane="-u_2" pos="0.00" freq="900.00" file="e1Detector_-u_2_9.xml"/>
+</additional>
