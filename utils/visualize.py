@@ -2,6 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd
 import numpy as np
+from sklearn.preprocessing import MinMaxScaler
 
 def travelTimeVis(data):
     sns.set_style("whitegrid")
@@ -41,3 +42,39 @@ def replaceDir(dir):
     else:
         raise Exception("argument format error!")
     return str
+
+def treeBuildTime(prunePath, basicPath, countPath):
+    '''
+    :param prunePath: The pre-prune tree's time cost result path
+    :param basicPath: The basic tree's time cost result path
+    :param countPath:  The count of vehicles in each simulation step
+    '''
+    vehCount = []
+    with open(countPath) as f1:
+        for line in f1:
+            vehCount.append(float(line))
+    f1.close()
+
+    prune_cost = []
+    with open(prunePath) as f2:
+        for line in f2:
+            prune_cost.append(float(line))
+    f2.close()
+
+    basic_cost = []
+    with open(basicPath) as f3:
+        for line in f3:
+            basic_cost.append(float(line))
+    f3.close()
+
+    build_method = ['Basic' for i in range(len(basic_cost))] + ['Pre-prune' for j in range(len(prune_cost))]
+    data = pd.DataFrame({'vehCount':vehCount + vehCount.copy(), 'timeCost': basic_cost + prune_cost, "method": build_method})
+
+    sns.boxplot(x="vehCount", y="timeCost", hue="method", data=data)
+    plt.show()
+    return data
+
+if __name__ == "__main__":
+    dd = treeBuildTime('../results/pruneCost.txt',
+                  '../results/basicCost.txt',
+                  '../results/pruneVehsCount.txt')

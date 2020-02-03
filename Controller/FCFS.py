@@ -3,7 +3,7 @@ import subprocess
 import sys
 import numpy as np
 from Controller.dynamicController import speedUp, slowDown, slow4conflict
-from scheduleMaking.caseJudging import read_config
+from utils.LoadConfig import read_config
 from collections import defaultdict
 from utils.visualize import travelTimeVis
 from Controller.areaController import laneChangeBan
@@ -139,8 +139,8 @@ class FcfsController:
         for vid in list(self.illegal.keys()):
             if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
                 del self.illegal[vid]
-        print(self.occupancy)
-        print(self.illegal)
+        # print(self.occupancy)
+        # print(self.illegal)
         return None
 
     def _collectTravelTime(self):
@@ -196,7 +196,7 @@ class FcfsController:
 if __name__ == "__main__":
     PORT = 8813
     sumoBinary = "D:\\sumo\\bin\\sumo-gui"      # your sumo binary path
-    cfg_filepath = "../sumoFiles\\intersection.sumocfg"
+    cfg_filepath = "../sumoFiles\\no_signal\\intersection.sumocfg"
     sumoProcess = subprocess.Popen([sumoBinary, "-c", cfg_filepath, "--remote-port", str(PORT)],
         stdout=sys.stdout, stderr=sys.stderr)
     traci.init(PORT)

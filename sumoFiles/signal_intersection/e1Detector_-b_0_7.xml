@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- generated on 02/03/20 09:28:14 by Eclipse SUMO GUI Version 1.3.1
+<configuration xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/sumoConfiguration.xsd">
+
+    <input>
+        <net-file value="D:\sumo_projects\signal_intersection\junction.net.xml"/>
+        <route-files value="D:\sumo_projects\signal_intersection\junction.rou.xml"/>
+        <additional-files value="D:\sumo_projects\signal_intersection\add.xml"/>
+    </input>
+
+    <time>
+        <step-length value="0.2"/>
+    </time>
+
+    <processing>
+        <lateral-resolution value="1"/>
+    </processing>
+
+    <gui_only>
+        <tracker-interval value="0.2"/>
+    </gui_only>
+
+</configuration>
+-->
+
+<detector xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/det_e1_file.xsd">
+    <interval begin="0.00" end="900.00" id="bo_1" nVehContrib="87" flow="348.00" occupancy="6.76" speed="7.18" harmonicMeanSpeed="7.15" length="5.00" nVehEntered="87"/>
+    <interval begin="900.00" end="982.20" id="bo_1" nVehContrib="7" flow="306.57" occupancy="5.79" speed="7.39" harmonicMeanSpeed="7.35" length="5.00" nVehEntered="7"/>
+</detector>

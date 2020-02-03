@@ -1,0 +1,14 @@
+<configuration>
+   <input>
+       <net-file value="junction.net.xml" />
+       <route-files value="junction.rou.xml" />
+       <additional-files value="add.xml" />
+   </input>
+   <time>
+       <step-length value="0.2" />
+   </time>
+   <processing>
+       <lateral-resolution value="1." />
+       <!--<fcd-output value="simulationResult.xml" />-->
+   </processing>
+</configuration>

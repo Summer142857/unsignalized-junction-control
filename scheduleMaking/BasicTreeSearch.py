@@ -2,6 +2,7 @@ from treelib import Node, Tree
 import numpy as np
 from operator import itemgetter
 import re
+import numba
 
 class BasicTree:
     def __init__(self, vehsInfo):
@@ -9,6 +10,7 @@ class BasicTree:
         self.root = self.tree.create_node("Root", "root")    # root node
         self.vehsInfo = vehsInfo
         self.vehList = list(vehsInfo.keys())
+
     def _build(self, currentNode, vehList):
         '''
         :param vehList: A dict, keys is the set of vehicles, value is a tuple which represents (lane, position)
@@ -40,7 +42,6 @@ class BasicTree:
             # Vehicles in front are at the front of the lane
             sortedList.append([vid[0] for vid in sorted(lane_info.items(), key=itemgetter(1), reverse=True)])
         pruneList = [sublist for sublist in sortedList if len(sublist) > 1]
-        print(pruneList)
         for subList in pruneList:
             for index in range(1, len(subList)):
                 # first, prune th subtree which begin with illegal vehicle id
@@ -61,18 +62,32 @@ class BasicTree:
     def show(self):
         self.tree.show()
 
-    def leaves(self):
+    def _leaves(self):
         '''
         :return: All the plan for vehicle passing currently.
         '''
         all_nodes = self.tree.all_nodes()
-        return [node.tag for node in all_nodes if node.is_leaf()]
-    def leaf_num(self):
-        return len(self.leaves())
+        return [node for node in all_nodes if node.is_leaf()]
+
+    def legal_orders(self):
+        leaves = self._leaves()
+        orders = []
+        for pattern in leaves:
+            # upToRight.1-leftToBelow.18-belowToRight.2-belowToRight.3-
+            tmp = pattern.tag.split("-")
+            try:
+                tmp.remove('')
+            except:
+                pass
+            if len(tmp) == self.tree.depth():
+                orders.append(tmp)
+        return orders
+
+
 
 if __name__ == "__main__":
-    vehsInfo = {"A":("u", 100), "B":("u", 90), "C":("b", 80), "D":("b", 74), "E":("u", 98)}
-    vehList = list(vehsInfo.keys())
+    vehsInfo = {'upToBelow.0': ['u_1', 198.86, 'C'], 'leftToUp.0': ['l_2', 199.88047864152406, 'C'],
+                'leftToUp.1': ['l_2', 183.38930919344475, 'C'], 'leftToRight.0': ['l_1', 153.85795824218027, 'C']}
     VTree = BasicTree(vehsInfo)
     VTree.build()
     VTree.show()
