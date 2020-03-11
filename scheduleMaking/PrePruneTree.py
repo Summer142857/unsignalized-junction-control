@@ -1,6 +1,3 @@
-import traci
-import sys
-import subprocess
 from treelib import Node, Tree
 import numpy as np
 from operator import itemgetter
@@ -31,11 +28,9 @@ class PrePruneTree:
                 self.tree.create_node(prefix + vehId + "-", prefix + vehId, parent=currentNode)
         # self.show()
         for node in self.tree.all_nodes():
-            if node.is_leaf and not self._testPrePrune(node.tag):
-                try:
-                    self._build(currentNode=node, vehList=vehList, flag0 = 0)
-                except:
-                    pass
+            if node.is_leaf() and not self._testPrePrune(node.tag):
+                self._build(currentNode=node, vehList=vehList, flag0 = 0)
+
 
     def _testIllegel(self, tag):
         '''

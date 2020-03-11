@@ -3,40 +3,71 @@
   <component name="ChangeListManager">
     <list default="true" id="fbf6edeb-c942-4e7a-9962-08998cd85512" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConflictConfig.txt" beforeDir="false" afterPath="$PROJECT_DIR$/ConflictConfig.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/BacisPlanning.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/BacisPlanning.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Controller/FCFS.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/FCFS.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/areaController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/areaController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Controller/dynamicController.py" beforeDir="false" afterPath="$PROJECT_DIR$/Controller/dynamicController.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/basicCost.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/basicCost.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/pruneCost.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/pruneCost.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/results/pruneVehsCount.txt" beforeDir="false" afterPath="$PROJECT_DIR$/results/pruneVehsCount.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" beforeDir="false" afterPath="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" beforeDir="false" afterPath="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scheduleMaking/caseJudging.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/add.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_1_14.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-b_2_15.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_0_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_1_10.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-l_2_11.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_0_6.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_1_16.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-r_2_17.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_0_4.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_1_8.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_-u_2_9.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_0_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_1_23.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_b_2_22.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_0_0.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_1_12.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_l_2_13.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_0_3.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_1_18.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_r_2_19.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_0_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_1_20.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/e1Detector_u_2_21.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/intersection.net.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/intersection.rou.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/sumoFiles/intersection.sumocfg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_2_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-b_2_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-l_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_1_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_1_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-r_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_2_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_-u_2_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_2_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_b_2_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_1_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_1_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_2_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_l_2_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_1_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_1_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_2_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_r_2_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_1_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_1_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_2_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/e1Detector_u_2_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.net.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.net.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.rou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.rou.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/no_signal/intersection.sumocfg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_1_14.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_1_14.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_2_15.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-b_2_15.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_0_7.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_0_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_1_10.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_1_10.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_2_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-l_2_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_0_6.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_0_6.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_1_16.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_1_16.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_2_17.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-r_2_17.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_0_4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_0_4.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_1_8.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_1_8.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_2_9.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_-u_2_9.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_0_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_0_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_1_23.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_1_23.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_2_22.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_b_2_22.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_0_0.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_0_0.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_1_12.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_1_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_2_13.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_l_2_13.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_0_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_0_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_1_18.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_1_18.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_2_19.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_r_2_19.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_0_2.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_0_2.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_1_20.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_1_20.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_2_21.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/e1Detector_u_2_21.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.net.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.net.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.rou.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.rou.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.sumocfg" beforeDir="false" afterPath="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.sumocfg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/visualize.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/visualize.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/main.py" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +76,8 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/intersectionOpt$BasicTreeSearch.coverage" NAME="BasicTreeSearch Coverage Results" MODIFIED="1579321097858" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scheduleMaking" />
+    <SUITE FILE_PATH="coverage/intersectionOpt$BasicTreeSearch.coverage" NAME="BasicTreeSearch Coverage Results" MODIFIED="1582634812204" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scheduleMaking" />
+    <SUITE FILE_PATH="coverage/intersectionOpt$BacisPlanning.coverage" NAME="BacisPlanning Coverage Results" MODIFIED="1583844313701" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Controller" />
     <SUITE FILE_PATH="coverage/intersectionOpt$PrePruneTree.coverage" NAME="PrePruneTree Coverage Results" MODIFIED="1580638253145" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/scheduleMaking" />
   </component>
   <component name="DatabaseView">
@@ -64,23 +96,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="236">
-              <caret line="205" column="19" lean-forward="true" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#12#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Controller/BacisPlanning.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="88">
-              <caret line="114" column="64" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
+            <state relative-caret-position="216">
+              <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+              <folding>
+                <element signature="e#0#12#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/domain/VirtualVehicle.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="18">
+              <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
               <folding>
                 <element signature="e#0#12#0" expanded="true" />
               </folding>
@@ -89,13 +121,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/visualize.py">
+        <entry file="file://$PROJECT_DIR$/ConflictConfig.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="106">
-              <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
-              <folding>
-                <element signature="e#0#31#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="144">
+              <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -129,27 +167,33 @@
         <option value="$PROJECT_DIR$/Controller/areaBasicControll.py" />
         <option value="$PROJECT_DIR$/utils/statistic.py" />
         <option value="$PROJECT_DIR$/sumoFiles/intersection.rou.xml" />
-        <option value="$PROJECT_DIR$/Controller/areaController.py" />
         <option value="$PROJECT_DIR$/noConflictConfig.txt" />
-        <option value="$PROJECT_DIR$/ConflictConfig.txt" />
-        <option value="$PROJECT_DIR$/Controller/dynamicController.py" />
         <option value="$PROJECT_DIR$/tmp.py" />
         <option value="$PROJECT_DIR$/utils/LoadConfig.py" />
         <option value="$PROJECT_DIR$/views/main.py" />
         <option value="$PROJECT_DIR$/scheduleMaking/caseJudging.py" />
-        <option value="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" />
-        <option value="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" />
         <option value="$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions" />
         <option value="$PROJECT_DIR$/test/treeBuild.py" />
+        <option value="$PROJECT_DIR$/Controller/dynamicController.py" />
+        <option value="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" />
+        <option value="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" />
+        <option value="$PROJECT_DIR$/Controller/areaController.py" />
+        <option value="$PROJECT_DIR$/Controller/SignalControl.py" />
         <option value="$PROJECT_DIR$/utils/visualize.py" />
-        <option value="$PROJECT_DIR$/Controller/BacisPlanning.py" />
+        <option value="$PROJECT_DIR$/sumoFiles/signal_intersection/junction.sumocfg" />
+        <option value="$PROJECT_DIR$/Controller/SignalController.py" />
+        <option value="$PROJECT_DIR$/domain/const.py" />
         <option value="$PROJECT_DIR$/Controller/FCFS.py" />
+        <option value="$PROJECT_DIR$/sumoFiles/no_signal/intersection.rou.xml" />
+        <option value="$PROJECT_DIR$/Controller/BacisPlanning.py" />
+        <option value="$PROJECT_DIR$/domain/VirtualVehicle.py" />
+        <option value="$PROJECT_DIR$/ConflictConfig.txt" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="376" />
-    <option name="y" value="106" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="312" />
+    <option name="y" value="42" />
     <option name="width" value="1260" />
     <option name="height" value="630" />
   </component>
@@ -174,7 +218,7 @@
             <path>
               <item name="intersectionOpt" type="b2602c69:ProjectViewProjectNode" />
               <item name="intersectionOpt" type="462c0819:PsiDirectoryNode" />
-              <item name="results" type="462c0819:PsiDirectoryNode" />
+              <item name="domain" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="intersectionOpt" type="b2602c69:ProjectViewProjectNode" />
@@ -190,13 +234,14 @@
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Desktop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\python_project\intersectionOpt\utils" />
       <recent name="D:\python_project\intersectionOpt\results" />
     </key>
   </component>
@@ -212,7 +257,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.FCFS">
+  <component name="RunManager" selected="Python.BacisPlanning">
     <configuration name="BacisPlanning" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intersectionOpt" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -235,10 +280,35 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="BasicTreeSearch" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="intersectionOpt" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scheduleMaking" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="FCFS" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intersectionOpt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Controller" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -254,7 +324,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="PrePruneTree" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="SignalController" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intersectionOpt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -262,12 +332,12 @@
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/scheduleMaking" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Controller" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/scheduleMaking/PrePruneTree.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Controller/SignalController.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -298,32 +368,13 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="treeBuild" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="intersectionOpt" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test/treeBuild.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="true" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="visualize" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="intersectionOpt" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
       <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
       <option name="IS_MODULE_SDK" value="true" />
@@ -341,11 +392,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.FCFS" />
-        <item itemvalue="Python.visualize" />
         <item itemvalue="Python.BacisPlanning" />
-        <item itemvalue="Python.treeBuild" />
-        <item itemvalue="Python.PrePruneTree" />
+        <item itemvalue="Python.FCFS" />
+        <item itemvalue="Python.SignalController" />
+        <item itemvalue="Python.visualize" />
+        <item itemvalue="Python.BasicTreeSearch" />
       </list>
     </recent_temporary>
   </component>
@@ -388,22 +439,90 @@
       <workItem from="1580649644428" duration="643000" />
       <workItem from="1580692200270" duration="13000" />
       <workItem from="1580693545704" duration="320000" />
+      <workItem from="1580695150021" duration="4468000" />
+      <workItem from="1580902641026" duration="1212000" />
+      <workItem from="1581043591201" duration="137000" />
+      <workItem from="1581073846915" duration="287000" />
+      <workItem from="1582116212235" duration="1961000" />
+      <workItem from="1582121366426" duration="2179000" />
+      <workItem from="1582189849546" duration="10340000" />
+      <workItem from="1582249948898" duration="7617000" />
+      <workItem from="1582280587880" duration="5260000" />
+      <workItem from="1582287180558" duration="108000" />
+      <workItem from="1582366567822" duration="11550000" />
+      <workItem from="1582459356953" duration="7518000" />
+      <workItem from="1582551065951" duration="15000" />
+      <workItem from="1582552879698" duration="413000" />
+      <workItem from="1582620050013" duration="113000" />
+      <workItem from="1582632587099" duration="4452000" />
+      <workItem from="1582708775704" duration="21000" />
+      <workItem from="1582802128689" duration="4099000" />
+      <workItem from="1582985561419" duration="417000" />
+      <workItem from="1583121277417" duration="2566000" />
+      <workItem from="1583144201441" duration="616000" />
+      <workItem from="1583205046688" duration="3000" />
+      <workItem from="1583240745247" duration="226000" />
+      <workItem from="1583285079300" duration="1351000" />
+      <workItem from="1583310360868" duration="13065000" />
+      <workItem from="1583332551673" duration="655000" />
+      <workItem from="1583369012789" duration="3619000" />
+      <workItem from="1583394342534" duration="7649000" />
+      <workItem from="1583414404525" duration="1882000" />
+      <workItem from="1583487958816" duration="912000" />
+      <workItem from="1583493176503" duration="141000" />
+      <workItem from="1583828420867" duration="17228000" />
+      <workItem from="1583912063175" duration="2991000" />
+      <workItem from="1583915253734" duration="561000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="146761000" />
+    <option name="totallyTimeSpent" value="262393000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22150365" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2061439" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.54174066" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.60568386" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21492007" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.124333926" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.49023092" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" />
+      <window_info active="true" anchor="bottom" id="Python Console" order="12" visible="true" weight="0.47957373" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.8804781" weight="0.32983023" />
+      <window_info anchor="right" x="0" y="0" width="273" height="495" id="Documentation" order="4" sideWeight="0.119521916" side_tool="true" visible="true" weight="0.32983023" />
+      <window_info anchor="right" id="Database" order="5" weight="0.32983023" />
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.30072758" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.54174066" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.21492007" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.4635879" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -412,27 +531,32 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" />
-      <window_info anchor="bottom" id="Python Console" order="12" visible="true" weight="0.25044405" />
+      <window_info anchor="bottom" id="Python Console" order="12" weight="0.12788633" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="SciView" order="3" sideWeight="0.530303" weight="0.77930474" />
-      <window_info anchor="right" x="0" y="0" width="273" height="495" id="Documentation" order="4" sideWeight="0.46969697" side_tool="true" weight="0.41713825" />
+      <window_info anchor="right" id="SciView" order="3" sideWeight="0.9136546" weight="0.5658852" />
+      <window_info anchor="right" x="0" y="0" width="273" height="495" id="Documentation" order="4" sideWeight="0.08634538" side_tool="true" weight="0.32983023" />
       <window_info anchor="right" id="Database" order="5" weight="0.32983023" />
-    </layout>
+      <window_info anchor="right" id="Coverage" order="6" side_tool="true" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <default-breakpoints>
+        <breakpoint type="python-exception">
+          <properties notifyOnTerminate="true" exception="BaseException">
+            <option name="notifyOnTerminate" value="true" />
+          </properties>
+        </breakpoint>
+      </default-breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/scheduleMaking/__init__.py" />
-    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/treelib/tree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-13292">
-          <caret line="282" selection-start-line="282" selection-end-line="282" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/collision.config.txt" />
     <entry file="file://$PROJECT_DIR$/collision_rule.csv" />
     <entry file="file://$APPLICATION_HOME_DIR$/helpers/pydev/_pydev_imps/_pydev_execfile.py">
@@ -444,38 +568,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Controller/areaBasicControll.py" />
     <entry file="file://$PROJECT_DIR$/utils/statistic.py" />
-    <entry file="file://$PROJECT_DIR$/sumoFiles/intersection.rou.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="18" column="26" selection-start-line="18" selection-start-column="26" selection-end-line="18" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/intersection.rou.xml" />
     <entry file="file://$PROJECT_DIR$/tmp.py" />
-    <entry file="file://$PROJECT_DIR$/utils/LoadConfig.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/dynamicController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="197">
-          <caret line="55" column="55" lean-forward="true" selection-start-line="55" selection-start-column="55" selection-end-line="55" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/areaController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/scheduleMaking/caseJudging.py" />
     <entry file="file://D:/pycharm_work for py36/Lib/site-packages/numpy/core/_methods.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -484,38 +578,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/treelib/node.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="149" selection-start-line="149" selection-end-line="149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ConflictConfig.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="49" lean-forward="true" selection-start-line="6" selection-start-column="49" selection-end-line="6" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/scheduleMaking/PrePruneTree.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="23" column="18" lean-forward="true" selection-start-line="23" selection-start-column="18" selection-end-line="23" selection-end-column="18" />
-          <folding>
-            <element signature="e#0#12#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/main.py" />
-    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="5" column="3" lean-forward="true" selection-start-line="5" selection-start-column="3" selection-end-line="5" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test/treeBuild.py" />
     <entry file="file://D:/pycharm_work for py36/Lib/site-packages/matplotlib/pyplot.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -524,40 +587,235 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py">
+    <entry file="file://$USER_HOME$/Desktop/hw02.ipynb" />
+    <entry file="file://$PROJECT_DIR$/results/basicCost.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/LoadConfig.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20">
-          <caret line="81" column="45" selection-start-line="81" selection-start-column="45" selection-end-line="81" selection-end-column="45" />
+        <state relative-caret-position="90">
+          <caret line="5" column="20" lean-forward="true" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/no_signal/intersection.net.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2383" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/no_signal/intersection.sumocfg">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/no_signal/add.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-853" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python36/Lib/copy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="140" selection-start-line="140" selection-end-line="140" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/sympy/core/expr.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="336" selection-start-line="336" selection-end-line="336" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/treelib/tree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="42" column="20" selection-start-line="42" selection-start-column="20" selection-end-line="42" selection-end-column="20" />
+          <folding>
+            <element signature="e#1124#1161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/treelib/node.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-938">
+          <caret line="30" column="6" selection-start-line="30" selection-start-column="6" selection-end-line="30" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/sklearn/cluster/birch.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="139" column="13" selection-start-line="139" selection-start-column="13" selection-end-line="139" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scheduleMaking/PrePruneTree.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/results/pruneVehsCount.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-29419" />
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="164" selection-start-line="164" selection-end-line="164" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/connection.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="100" selection-start-line="100" selection-end-line="100" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/storage.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="36" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/domain.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="83">
+          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/areaController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="522">
+          <caret line="29" column="24" selection-start-line="29" selection-start-column="24" selection-end-line="29" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/pycharm_work for py36/Lib/site-packages/seaborn/distributions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="109">
+          <caret line="41" column="4" selection-start-line="41" selection-start-column="4" selection-end-line="41" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/visualize.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="106">
-          <caret line="72" column="48" selection-start-line="72" selection-start-column="48" selection-end-line="72" selection-end-column="48" />
+        <state relative-caret-position="90">
+          <caret line="8" column="48" selection-start-line="8" selection-start-column="48" selection-end-line="8" selection-end-column="48" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Controller/BacisPlanning.py">
+    <entry file="file://$PROJECT_DIR$/scheduleMaking/BasicTreeSearch.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="88">
-          <caret line="114" column="64" selection-start-line="114" selection-start-column="64" selection-end-line="114" selection-end-column="64" />
+        <state relative-caret-position="126">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+          <folding>
+            <element signature="e#0#30#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/signal_intersection/junction.sumocfg">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/SignalController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1386">
+          <caret line="77" column="27" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="27" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/domain/const.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="54">
+          <caret line="3" column="8" selection-start-line="3" selection-end-line="3" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/_simulation.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="376" column="8" selection-start-line="376" selection-start-column="8" selection-end-line="376" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://D:/sumo/tools/traci/_vehicle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="306" selection-start-line="306" selection-end-line="306" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/dynamicController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-270">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/sumoFiles/no_signal/intersection.rou.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-736">
+          <caret line="4" column="83" selection-start-line="4" selection-start-column="83" selection-end-line="4" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/pycharm64.exe.vmoptions">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="11" column="52" selection-start-line="11" selection-start-column="52" selection-end-line="11" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Controller/BacisPlanning.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="24" column="24" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#12#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ConflictConfig.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Controller/FCFS.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="205" column="19" lean-forward="true" selection-start-line="205" selection-start-column="19" selection-end-line="205" selection-end-column="19" />
+        <state relative-caret-position="144">
+          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/domain/VirtualVehicle.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="18">
+          <caret line="85" column="24" selection-start-line="85" selection-start-column="24" selection-end-line="85" selection-end-column="24" />
           <folding>
             <element signature="e#0#12#0" expanded="true" />
           </folding>

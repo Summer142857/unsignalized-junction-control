@@ -2,54 +2,54 @@
 	<vType id="car1" vClass="passenger" carFollowModel="CACC" departSpeedd="max" maxSpeed="10.0"/>
 	
 	<!-- 西进口车流 -->
-	<flow id="leftToRight" color="220,20,60" begin="0" end="7200" probability="0.026" type="car1">
+	<flow id="leftToRight" color="220,20,60" begin="0" end="7200" probability="0.03" type="car1" departLane="1">
 		<route edges="l -r" />
 	</flow>
 	
-	<flow id="leftToBelow" color="139,0,139" begin="0" end="7200" probability="0.1" type="car1">
+	<flow id="leftToBelow" color="139,0,139" begin="0" end="7200" probability="0.03" type="car1" departLane="0">
 		<route edges="l -b" />
 	</flow>
 	
-	<flow id="leftToUp" color="248,248,255" begin="0" end="7200" probability="0.05" type="car1">
+	<flow id="leftToUp" color="248,248,255" begin="0" end="7200" probability="0.03" type="car1" departLane="2">
 		<route edges="l -u" />
 	</flow>
 	
 	<!-- 南进口车流 -->
-	<flow id="belowToRight" color="0,0,255" begin="0" end="7200" probability="0.027" type="car1">
+	<flow id="belowToRight" color="0,0,255" begin="0" end="7200" probability="0.03" type="car1" departLane="0">
 		<route edges="b -r" />
 	</flow>
 	
-	<flow id="belowToLeft" color="25,25,112" begin="0" end="7200" probability="0.01" type="car1">
+	<flow id="belowToLeft" color="25,25,112" begin="0" end="7200" probability="0.03" type="car1" departLane="2">
 		<route edges="b -l" />
 	</flow>
 	
-	<flow id="belowToUp" color="112,128,144" begin="0" end="7200" probability="0.02" type="car1">
+	<flow id="belowToUp" color="112,128,144" begin="0" end="7200" probability="0.03" type="car1" departLane="1">
 		<route edges="b -u" />
 	</flow>
 	
 	<!-- 东进口车流 -->
-	<flow id="rightToLeft" color="70,130,180" begin="0" end="7200" probability="0.03" type="car1">
+	<flow id="rightToLeft" color="70,130,180" begin="0" end="7200" probability="0.03" type="car1" departLane="1">
 		<route edges="r -l" />
 	</flow>
 	
-	<flow id="rightToUp" color="0,255,255" begin="0" end="7200" probability="0.005" type="car1">
+	<flow id="rightToUp" color="0,255,255" begin="0" end="7200" probability="0.03" type="car1" departLane="0">
 		<route edges="r -u" />
 	</flow>
 	
-	<flow id="rightToBelow" color="127,255,170" begin="0" end="7200" probability="0.005" type="car1">
+	<flow id="rightToBelow" color="127,255,170" begin="0" end="7200" probability="0.03" type="car1" departLane="2">
 		<route edges="r -b" />
 	</flow>
 	
 	<!-- 北进口车流 -->
-	<flow id="upToRight" color="0,255,127" begin="0" end="7200" probability="0.015" type="car1">
+	<flow id="upToRight" color="0,255,127" begin="0" end="7200" probability="0.03" type="car1" departLane="2">
 		<route edges="u -r" />
 	</flow>
 	
-	<flow id="upToLeft" color="255,255,0" begin="0" end="7200" probability="0.012" type="car1">
+	<flow id="upToLeft" color="255,255,0" begin="0" end="7200" probability="0.03" type="car1" departLane="0">
 		<route edges="u -l" />
 	</flow>	
 	
-	<flow id="upToBelow" color="205,133,63" begin="0" end="7200" probability="0.027" type="car1">
+	<flow id="upToBelow" color="205,133,63" begin="0" end="7200" probability="0.03" type="car1" departLane="1">
 		<route edges="u -b" />
 	</flow>		
 	

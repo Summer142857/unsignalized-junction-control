@@ -1,5 +1,7 @@
 import traci
 import numpy as np
+import copy
+from domain.VirtualVehicle import VirtualVehicle
 
 LANE_LENGTH = 200
 
@@ -21,6 +23,7 @@ def speedUp(vid):
     except:
         arrTime = traci.simulation.getTime() + time_interval1
     return arrTime
+
 
 def slowDown(vid, turnVelocity):
     '''
@@ -45,6 +48,7 @@ def slowDown(vid, turnVelocity):
     arrTime = traci.simulation.getTime() + time_interval
     return arrTime
 
+
 def slow4conflict(vid):
     '''
     if a vehicle can't apply a permission, it would slow down slowly, expect to stop at the intersection
@@ -62,3 +66,16 @@ def slow4conflict(vid):
         return traci.simulation.getTime() + nowSpeed / expectedDecel
     else:
         return traci.simulation.getTime()
+
+
+def followMappingVeh(vid, vehsInfo, delay, case):
+    vehsInfo = copy.deepcopy(vehsInfo)
+    del vehsInfo[vid]
+    if case == 'C':
+        return None
+    elif case == 'D':
+        return None
+    else:
+        raise ValueError("Invalid argument value:", case)
+
+

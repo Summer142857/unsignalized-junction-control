@@ -6,11 +6,9 @@ from Controller.dynamicController import speedUp, slowDown, slow4conflict
 from utils.LoadConfig import read_config
 from collections import defaultdict
 from utils.visualize import travelTimeVis
-from Controller.areaController import laneChangeBan
+from Controller.areaController import laneChangeBan, moveToBar
+from domain.const import *
 
-LANE_ID = ["l_0", "b_0", "r_0", "u_0", "l_1", "b_1", "r_1", "u_1", "l_2", "b_2", "r_2", "u_2"]   # left, below, right, up
-LANE_LENGTH = 200
-JUNCTION_ID = [":gneJ11_0_0", ":gneJ11_1_0", ":gneJ11_2_0", ":gneJ11_3_0",":gneJ11_4_0", ":gneJ11_5_0",":gneJ11_6_0", ":gneJ11_7_0", ":gneJ11_8_0",":gneJ11_9_0", ":gneJ11_10_0",":gneJ11_11_0"]
 
 class FcfsController:
     '''
@@ -79,8 +77,6 @@ class FcfsController:
         :param vid: vehicle id in sumo
         :return: (the timeStamp when vehicle entry the intersection, the time vehicle spending in crossing the intersection)
         '''
-        speed = traci.vehicle.getSpeed(vid)
-        position = self.vehsInfo[vid][1]
         # dir1 is current direction, dir2 is future's direction
         dir1, dir2 = vid.split('.')[0].split('To')
         # judge if the vehicle needs to turn in the intersection
@@ -89,15 +85,15 @@ class FcfsController:
         if straight_dict[dir1] == dir2:
             # don't need to slow down, just go straight with max allowed speed
             arrTime = speedUp(vid)
-            depTime = 35.0 / traci.vehicle.getAllowedSpeed(vid)
+            depTime = STRAIGHT / traci.vehicle.getAllowedSpeed(vid)
         else:
             # need to turn, slow down to pass the intersection
             arrTime = slowDown(vid, 4.0)
             if longTurn_dict[dir1] == dir2:
                 # long turning
-                depTime = 30.0 / 4.0
+                depTime = LEFTTURN / 4.0
             else:
-                depTime = 28.0 / 4.0
+                depTime = RIGHTTURN / 4.0
         return (arrTime, depTime)
 
     def _applyReservation(self):
@@ -175,23 +171,26 @@ class FcfsController:
         :return: if all_direction is True, return a list including all vehicles' travel time; otherwise, return a dict
         with different direction's travel time information
         '''
+        straight_dict = {'left': 'Right', 'right':'Left', 'up': 'Below', 'below':'Up'}
+        longTurn_dict = {'left': 'Up', 'right':'Below', 'up':'Right', 'below':'Left'}
+        dirTravelTime = defaultdict(list)
+        for vid in list(self.travelDict.keys()):
+            flow_name = vid.split('.')[0]
+            dir1, dir2 = flow_name.split('To')
+            if len(self.travelDict[vid]) == 2:
+                if straight_dict[dir1] == dir2:
+                    dirTravelTime[flow_name].append(max(self.travelDict[vid][1] - self.travelDict[vid][0] - 8.0, 0.0001))
+                elif longTurn_dict[dir1] == dir2:
+                    dirTravelTime[flow_name].append(max(self.travelDict[vid][1] - self.travelDict[vid][0] - 19.1428, 0.0001))
+                else:
+                    dirTravelTime[flow_name].append(max(self.travelDict[vid][1] - self.travelDict[vid][0] - 12.8928, 0.0001))
         if all_direction:
-            travelTimeList = []
-            for value in self.travelDict.values():
-                if len(value) == 2:
-                    travelTimeList.append(value[1] - value[0])
-            return travelTimeList
-        else:
-            dirTravelTime = defaultdict(list)
-            for vid in list(self.travelDict.keys()):
-                flow_name = vid.split('.')[0]
-                if len(self.travelDict[vid]) == 2:
-                    dirTravelTime[flow_name].append(self.travelDict[vid][1] - self.travelDict[vid][0])
-            return dirTravelTime
+            return sum([v for k, v in dirTravelTime.items()], [])
+        return dirTravelTime
 
     def travelTimePlot(self, all_direction):
         statistic = self._statistic(all_direction=all_direction)
-        travelTimeVis(statistic)
+        travelTimeVis(statistic, "FCFS")
 
 if __name__ == "__main__":
     PORT = 8813
@@ -201,8 +200,8 @@ if __name__ == "__main__":
         stdout=sys.stdout, stderr=sys.stderr)
     traci.init(PORT)
     t = FcfsController()
-    for sim_step in range(36000):
+    for sim_step in range(600):
         traci.simulationStep()
         t.simOneStep()
     traci.close()
-    t.travelTimePlot(all_direction=False)
+    t.travelTimePlot(all_direction=True)

@@ -9,6 +9,6 @@
    </time>
    <processing>
        <lateral-resolution value="1." />
-       <!--<fcd-output value="simulationResult.xml" />-->
+       <fcd-output value="simulationResult.xml" />
    </processing>
 </configuration>

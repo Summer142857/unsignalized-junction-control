@@ -10,6 +10,8 @@ class BasicTree:
         self.root = self.tree.create_node("Root", "root")    # root node
         self.vehsInfo = vehsInfo
         self.vehList = list(vehsInfo.keys())
+        self.i = 1
+
 
     def _build(self, currentNode, vehList):
         '''
@@ -28,11 +30,9 @@ class BasicTree:
                     prefix = currentNode.tag
                 self.tree.create_node(prefix + vehId + "-", prefix + vehId, parent=currentNode)
         for node in self.tree.all_nodes():
-            if node.is_leaf:
-                try:
-                    self._build(currentNode=node, vehList=vehList)
-                except:
-                    pass
+            if node.is_leaf():
+                self._build(currentNode=node, vehList=vehList)
+
 
     def _prune(self):
         laneId = [value[0] for value in self.vehsInfo.values()]
@@ -87,7 +87,8 @@ class BasicTree:
 
 if __name__ == "__main__":
     vehsInfo = {'upToBelow.0': ['u_1', 198.86, 'C'], 'leftToUp.0': ['l_2', 199.88047864152406, 'C'],
-                'leftToUp.1': ['l_2', 183.38930919344475, 'C'], 'leftToRight.0': ['l_1', 153.85795824218027, 'C']}
+                'leftToUp.1': ['l_2', 183.38930919344475, 'C'], 'leftToRight.0': ['l_1', 153.85795824218027, 'C'],
+                'leftToUp.2': ['l_2', 180.38930919344475, 'C'], 'leftToUp.3': ['l_2', 170.38930919344475, 'C']}
     VTree = BasicTree(vehsInfo)
     VTree.build()
     VTree.show()
