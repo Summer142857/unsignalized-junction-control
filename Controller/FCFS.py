@@ -15,7 +15,7 @@ class FcfsController:
     initialize before simulation begin
     '''
     def __init__(self, dist=50.0):
-        self.dist = 50.0
+        self.dist = dist
         self.vehsInfo = dict()
         self.in_loop = ['u_1', 'l_1', 'b_1', 'r_1', 'u_2', 'l_2', 'b_2', 'r_2','u_3', 'l_3', 'b_3', 'r_3']
         self.exit_loop = ['uo_1', 'bo_1', 'ro_1', 'lo_1', 'uo_2', 'bo_2', 'ro_2', 'lo_2', 'uo_3', 'bo_3', 'ro_3', 'lo_3']
@@ -25,6 +25,9 @@ class FcfsController:
         self.conflictDict = read_config()
         # for calculating travel time
         self.travelDict = defaultdict(list)
+
+    def __str__(self):
+        return "fcfs"
 
     def getVehsInfo(self):
         # Before every simulation step, first clear the dict to delete previous information
@@ -129,12 +132,19 @@ class FcfsController:
     def handleReservation(self):
         self._applyReservation()
         for vid in list(self.occupancy.keys()):
-            if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
-                # neither in the control area nor at the intersection
-                del self.occupancy[vid]
+            try:
+                if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
+                    # neither in the control area nor at the intersection
+                    del self.occupancy[vid]
+            except Exception as e:
+                print(e)
+
         for vid in list(self.illegal.keys()):
-            if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
-                del self.illegal[vid]
+            try:
+                if vid not in list(self.vehsInfo.keys()) and traci.vehicle.getLaneID(vid) not in JUNCTION_ID:
+                    del self.illegal[vid]
+            except Exception as e:
+                print(e)
         # print(self.occupancy)
         # print(self.illegal)
         return None

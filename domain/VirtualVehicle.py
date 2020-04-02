@@ -194,6 +194,8 @@ class VirtualVehicle(object):
     def _estimateCaseD(self, thisVehLocation, thisSpeed, mapLocation, flag):
         this_map_gap = mapLocation - traci.vehicle.getLanePosition(self.thisVeh)
         potentialLeader = traci.vehicle.getLeader(self.thisVeh)[0]
+        if traci.vehicle.getLaneID(potentialLeader) != self.vehsInfo[self.thisVeh][0]:
+            return self._estimateCaseC(thisVehLocation, thisSpeed, mapLocation, flag)
         leaderLocation = traci.vehicle.getLanePosition(potentialLeader)
         this_leader_distance = leaderLocation - thisVehLocation
         if this_leader_distance < this_map_gap:
@@ -220,7 +222,10 @@ class VirtualVehicle(object):
                     self.thisVeh = tmp
                     leaderT = self._estimateCaseC(leaderLocation, leaderSpeed, mapLocation, flag)
                     if self.thisVehDir == 1:
-                        deltaT = this_leader_distance / thisSpeed
+                        if thisSpeed != 0:
+                            deltaT = this_leader_distance / thisSpeed
+                        else:
+                            deltaT = 0
                     else:
                         t, x = self._slow4Turn(thisSpeed)
                         if x < this_leader_distance:

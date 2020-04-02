@@ -1,7 +1,9 @@
 from treelib import Node, Tree
 import numpy as np
 from operator import itemgetter
-import re
+import threading
+from utils.tailRecur import tail_call_optimized
+
 
 class PrePruneTree:
     def __init__(self, vehsInfo):
@@ -11,7 +13,8 @@ class PrePruneTree:
         self.vehList = list(vehsInfo.keys())
         self.pruneList = None
 
-    def _build(self, currentNode, vehList, flag0 = 0):
+    @tail_call_optimized
+    def _build(self, currentNode, vehList):
         '''
         :param vehList: A dict, keys is the set of vehicles, value is a tuple which represents (lane, position)
         :param currentNode: The current node in the tree
@@ -29,7 +32,7 @@ class PrePruneTree:
         # self.show()
         for node in self.tree.all_nodes():
             if node.is_leaf() and not self._testPrePrune(node.tag):
-                self._build(currentNode=node, vehList=vehList, flag0 = 0)
+                self._build(currentNode=node, vehList=vehList)
 
 
     def _testIllegel(self, tag):
@@ -87,8 +90,12 @@ class PrePruneTree:
         return pruneList
 
     def build(self):
+        threading.stack_size(20000000)
         self.pruneList = self.obtainPruneList()
-        self._build(self.root, self.vehList)
+        # start a new thread to generate tree
+        thread = threading.Thread(target=self._build(self.root, self.vehList))
+        thread.start()
+
 
     def show(self):
         self.tree.show()

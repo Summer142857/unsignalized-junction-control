@@ -15,6 +15,9 @@ class SignalController(object):
         self.exit_loop = ['uo_1', 'bo_1', 'ro_1', 'lo_1', 'uo_2', 'bo_2', 'ro_2', 'lo_2', 'uo_3', 'bo_3', 'ro_3', 'lo_3']
         self.travelDict = defaultdict(list)
 
+    def __str__(self):
+        return "signal"
+
     def _collectTravelTime(self):
         '''
         calculate the travel time between the start of incoming lane's Buffered Area and the exit of the junction
